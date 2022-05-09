@@ -1,2 +1,6 @@
 node_modules
 .env
+.vs/_YelpCamp2021/v16/.suo
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+.gitignore
