@@ -38,7 +38,7 @@ const seedDB = async () => {
                   "filename": "YelpCamp2021/pw8oa9jx6rrs9xp8lmst"
                 }
             ],
-            author: '618beeab21ca853ba4ac2e76',
+            //author: '618beeab21ca853ba4ac2e76',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aperiam nisi nulla temporibus consectetur animi, ratione, non possimus aspernatur officiis perspiciatis eius ea iure consequuntur! Corporis cupiditate voluptates consequatur architecto.',
             price,
             geometry: {

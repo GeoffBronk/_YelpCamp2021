@@ -25,10 +25,10 @@ const campRoutes = require('./routes/campgrounds');
 const reviewRoutes = require('./routes/reviews');
 
 //connects to a local mongoose database named yelp-camp (mongoose service must be running)
-//const dbUrl = 'mongodb://localhost:27017/yelp-camp';
+const dbUrl = 'mongodb://localhost:27017/yelp-camp';
 
 //Use MongoDb Atlas database
-const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp';
+//const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp';
 
 mongoose.connect(dbUrl, { 
     useFindAndModify: false,
@@ -143,7 +143,7 @@ passport.use(new localStrategy(User.authenticate())); //sets up local strategy w
 passport.serializeUser(User.serializeUser());  //defines what method to use for serializing and deserializing user info
 passport.deserializeUser(User.deserializeUser());
 
-//this runs for every request and adds 3 items to the olcals collection
+//this runs for every request and adds 3 items to the locals collection
 app.use((req, res, next) => {
     res.locals.currentUser = req.user;
     res.locals.success = req.flash('success');
